@@ -30,23 +30,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/certifiedcloudarchitect/github-template-repo">
+  <a href="https://github.com/certifiedcloudarchitect/macos-config">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">github-template-repo</h3>
+<h3 align="center">macos-config</h3>
 
   <p align="center">
-    A repository template
+    A repository for configuring a new MacBook Pro with development tools.
     <br />
-    <a href="https://github.com/certifiedcloudarchitect/github-template-repo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/certifiedcloudarchitect/macos-config"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/certifiedcloudarchitect/github-template-repo">View Demo</a>
+    <a href="https://github.com/certifiedcloudarchitect/macos-config">View Demo</a>
     ·
-    <a href="https://github.com/certifiedcloudarchitect/github-template-repo/issues">Report Bug</a>
+    <a href="https://github.com/certifiedcloudarchitect/macos-config/issues">Report Bug</a>
     ·
-    <a href="https://github.com/certifiedcloudarchitect/github-template-repo/issues">Request Feature</a>
+    <a href="https://github.com/certifiedcloudarchitect/macos-config/issues">Request Feature</a>
   </p>
 </div>
 
@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `certifiedcloudarchitect`, `github-template-repo`, `twitter_handle`, `certifiedcloudarchitect`, `certifiedcloudarchitect@gmail.com`, `github-template-repo`, `A repository template`
+This project was developed inorder to help expedite the provisioning of development tools and configurations.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -93,14 +93,14 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Command line tools for Xcode](https://developer.apple.com/xcode/)
+* [Homebrew](https://brew.sh/)
+* [Zsh](https://www.zsh.org/)
+* [Oh My Zsh](https://ohmyz.sh/)
+* [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+* [Zsh](https://www.zsh.org/)
+* [OpenSSH](https://www.openssh.com/)
+* [GnuPG](https://gnupg.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -109,32 +109,30 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Inorder to get started you will need to have a newly provisioned macOS.  This has been tested on a MacBook Pro (Intel) with Monterey version 12.2. 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+You should review the scripts to understand what the configurations are providing.  You can toggle tools and configurations on and offf using boolean values (true, false).
+* `install.sh`
   ```sh
-  npm install npm@latest -g
+  bash ./setup-scripts/install-kubectl.sh "false"
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free GitHub account at [https://github.com/](https://github.com/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/certifiedcloudarchitect/github-template-repo.git
+   git clone https://github.com/certifiedcloudarchitect/macos-config.git
    ```
-3. Install NPM packages
+3. Install the tools and configurations
    ```sh
-   npm install
+   source install.sh
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+4. Enter a new password when prompted for new SSH and GPG key.
+5. Your public keys will be printed to the console at the end of the process for use with GitHub.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -145,7 +143,7 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/certifiedcloudarchitect/macos-config/blob/main/README.md)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -154,12 +152,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [X] Provision standard toolset
+- [ ] Provision additional macOS settings
+- [ ] Add additonal tools and configurations
+    - [ ] Visual Studio Code configurations
+    - [ ] Machine Learning toolsets
 
-See the [open issues](https://github.com/certifiedcloudarchitect/github-template-repo/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/certifiedcloudarchitect/macos-config/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -186,7 +185,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -195,35 +194,23 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/certifiedcloudarchitect/github-template-repo](https://github.com/certifiedcloudarchitect/github-template-repo)
+Project Link: [https://github.com/certifiedcloudarchitect/macos-config](https://github.com/certifiedcloudarchitect/macos-config)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/certifiedcloudarchitect/github-template-repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/certifiedcloudarchitect/github-template-repo/graphs/contributors
+[contributors-url]: https://github.com/certifiedcloudarchitect/macos-config/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/certifiedcloudarchitect/github-template-repo.svg?style=for-the-badge
-[forks-url]: https://github.com/certifiedcloudarchitect/github-template-repo/network/members
+[forks-url]: https://github.com/certifiedcloudarchitect/macos-config/network/members
 [stars-shield]: https://img.shields.io/github/stars/certifiedcloudarchitect/github-template-repo.svg?style=for-the-badge
-[stars-url]: https://github.com/certifiedcloudarchitect/github-template-repo/stargazers
+[stars-url]: https://github.com/certifiedcloudarchitect/macos-config/stargazers
 [issues-shield]: https://img.shields.io/github/issues/certifiedcloudarchitect/github-template-repo.svg?style=for-the-badge
-[issues-url]: https://github.com/certifiedcloudarchitect/github-template-repo/issues
+[issues-url]: https://github.com/certifiedcloudarchitect/macos-config/issues
 [license-shield]: https://img.shields.io/github/license/certifiedcloudarchitect/github-template-repo.svg?style=for-the-badge
-[license-url]: https://github.com/certifiedcloudarchitect/github-template-repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/certifiedcloudarchitect/macos-config/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/certifiedcloudarchitect
 [product-screenshot]: images/screenshot.png
