@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/certifiedcloudarchitect/macos-config">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="70" height="70">
   </a>
 
 <h3 align="center">macos-config</h3>
