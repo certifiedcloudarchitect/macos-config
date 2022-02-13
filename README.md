@@ -83,7 +83,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<div align="center">
+  <a href="https://github.com/certifiedcloudarchitect/macos-config">
+    <img src="images/screenshot.png" alt="macos-config" width="525" height="350">
+  </a>
+</div>
 
 This project was developed inorder to help expedite the provisioning of development tools and configurations.
 
