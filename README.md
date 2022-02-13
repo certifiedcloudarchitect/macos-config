@@ -132,6 +132,11 @@ You should review the scripts to understand what the configurations are providin
    ```
 4. Enter a new password when prompted for new SSH and GPG key.
 5. Your public keys will be printed to the console at the end of the process for use with GitHub.
+6. You will need to reboot the OS.
+7. Once the OS has been rebooted you need to run  the `post-install.sh` script in the setup-scripts folder to complete the configurations.
+   ```sh
+   source post-install.sh
+   ```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
